@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./add-bike.css">
+</head>
+<body>
+    <div class="container">
+        <nav id="menu">
+            <ul>
+                <li class="BIKESHOP"><a href="">BIKESHOP</a></li>
+                <li><a href="">HOME</a></li>
+                <li><a href="">BIKES</a></li>
+                <li><a href="">ABOUT</a></li>
+            </ul>
+        </nav>
+    </div>
+    <h1 id="title">Add New Bike</h1>
+    <form id="form">
+        <label for="brand">Brand</label>
+        <input  type="text" name="brand" id="brand"/>
+        <br />
+        <label for="model">Model</label>
+        <input  type="text" name="model" id="model"/>
+        <br />
+        <label for="type">Type</label>
+        <input  type="text" name="type" id="type"/>
+        <br />
+        <label for="price">Price</label>
+        <input  type="number" name="price" id="price"/>
+        <br />
+        <label for="year">Year</label>
+        <input  type="number" name="year" id="year"/>
+
+        <input id="submit-btn" type="submit"/>
+        <button id="clear-btn" type="button" onclick="clearForm()">Отмена</button>
+    </form>
+<script src="./add-bike.js"></script>
+</body>
+</html>

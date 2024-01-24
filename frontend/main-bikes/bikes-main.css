@@ -1,0 +1,93 @@
+body {
+    background-color: #eee;
+    color: white;
+}
+
+
+
+#menu {
+    font-size:25px;
+    font-family:sans-serif;
+    font-style:normal;
+    border: 1px black solid;
+    padding: 0px 0px 0px 50px;
+    border-radius: 20px;
+    background-color: #005aa0;
+    margin-top: 20px;
+    
+
+}
+
+#menu ul {
+    list-style: none;
+    display: inline-flex;
+    margin-left: 200px;
+    
+}
+
+a:-webkit-any-link {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.BIKESHOP {
+    margin-right: 200px;
+    margin-left: -220px;
+    font-weight: bold;
+    font-style: italic;
+    
+
+}
+
+.conatiner {
+    width:80%;
+    margin:auto;
+    list-style:none;
+} 
+
+li {
+    margin-right: 30px;
+}
+
+img {
+    border-radius: 20px;
+    width:100%;
+    margin-top: 20px;
+}
+
+h1 {
+    font-style: normal;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 900;
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+    
+}
+
+p {
+    font-size: 22px;
+    font-family: sans-serif;
+    font-style: normal;
+    padding: 1em;
+    display: contents;
+
+}
+
+.box-1 {
+    border: 1px black solid;
+    border-radius: 20px;
+    margin-top: 20px;
+    background-color: #005aa0;
+    padding: 0px 50px 50px 50px;
+}
+
+img {
+    animation: bg 3s infinite;
+}
+
+@keyframes bg {
+    100%{filter: hue-rotate(360deg);}
+}

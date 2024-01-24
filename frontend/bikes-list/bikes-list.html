@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bikes-list/bikes-list.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <nav id="menu">
+            <ul>
+                <li class="BIKESHOP"><a href="">BIKESHOP</a></li>
+                <li><a href="">HOME</a></li>
+                <li><a href="">BIKES</a></li>
+                <li><a href="">ABOUT</a></li>
+            </ul>
+        </nav>
+    </div>
+       
+    <div class="table-wrapper">
+        <div class="bikes-action-wrapper">
+            <a href="../add-bike/add-bike.html" class="add-new-bike-link">Add new bike</a>
+        </div>
+        <input type="text" id="search" oninput="searchTable()">
+        <div class="bikes-table-wrapper">
+        
+            <table id="bikes" class="bikes-table">
+                <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Brand</th>
+                    <th>Model</th>
+                    <th>Type</th>
+                    <th>Price</th>
+                    <th>Year</th>
+                    <th>Actions</th>
+                </tr>
+                </thead>
+                <tbody id="bikes-body">
+                </tbody>
+            </table>
+        </div>
+        </thead>
+
+    </div>
+
+    <script src="../bikes-list/bikes-list.js"></script>   
+</body>
+</html>
