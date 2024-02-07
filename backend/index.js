@@ -47,6 +47,10 @@ app.get('/api/bikes', async (req, res) => {
 // GET SINGLE
 app.get('/api/bikes/:id', async (req, res) => {
     const id = req.params.id;
+    if (!ObjectId.isValid(id))  {
+        res.status(400).send('Id is not correct');
+        return;
+    }
     const client = await MongoClient.connect(mongoConnectionString);
     const db = client.db('bikes');
 
@@ -58,6 +62,10 @@ app.get('/api/bikes/:id', async (req, res) => {
 // UPDATE
 app.put('/api/bikes/:id', async (req, res) => {
     const id = req.params.id;
+    if (!ObjectId.isValid(id))  {
+        res.status(400).send('Id is not correct');
+        return;
+    }
     const bike = req.body;
 
     // Validation
@@ -83,7 +91,10 @@ app.put('/api/bikes/:id', async (req, res) => {
 // DELETE
 app.delete('/api/bikes/:id', async (req, res) => {
     const id = req.params.id;
-
+    if (!ObjectId.isValid(id))  {
+        res.status(400).send('Id is not correct');
+        return;
+    }
     const client = await MongoClient.connect(mongoConnectionString);
     const db = client.db('bikes');
     const result = await db.collection('data').deleteOne({ _id: new ObjectId(id) });
